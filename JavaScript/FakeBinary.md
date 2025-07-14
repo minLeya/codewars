@@ -6,7 +6,8 @@ Given a string of digits, you should replace any digit below 5 with '0' and any 
 Note: input will never be an empty string
 
 ## Solution
-` function fakeBin(x){ \
+```javascript
+ function fakeBin(x){ \
   let newX = ""; \
   for (let i = 0; i <= x.length - 1; i++) { \
     if (parseInt(x[i]) < 5) { \
@@ -18,4 +19,4 @@ Note: input will never be an empty string
   } \
   return newX; \
 } \
-`
+```
