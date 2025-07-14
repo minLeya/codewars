@@ -7,16 +7,16 @@ Note: input will never be an empty string
 
 ## Solution
 ```javascript
- function fakeBin(x){ \
-  let newX = ""; \
-  for (let i = 0; i <= x.length - 1; i++) { \
-    if (parseInt(x[i]) < 5) { \
-      newX += "0"; \
-    } \
-    else { \
-      newX += "1"; \
-    } \
-  } \
-  return newX; \
-} \
+ function fakeBin(x){ 
+  let newX = ""; 
+  for (let i = 0; i <= x.length - 1; i++) { 
+    if (parseInt(x[i]) < 5) { 
+      newX += "0"; 
+    } 
+    else { 
+      newX += "1"; 
+    } 
+  } 
+  return newX; 
+} 
 ```
