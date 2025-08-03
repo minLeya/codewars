@@ -11,7 +11,7 @@ If both input arrays are empty, return an empty array.
 
 No input validation is needed, as both arrays are guaranteed to contain zero or more integers.
 
-## Solution
+## Solution №1
 ```javascript
 function mergeArrays(arr1, arr2) {
   let newArr = arr1.concat(arr2).sort((a, b) => a - b);
@@ -20,5 +20,12 @@ function mergeArrays(arr1, arr2) {
   // стрелочная функция внутри filter
   // если индекс первого вхождения (indexOf) совпадает с индексом (местоположением) в массиве - все норм
   // если индекс первого вхождения не совпадает с местоположением в массиве - убирается фильтром
+}
+```
+
+## Solution №2
+```javascript
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
 }
 ```
